@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stanbic Bank Uganda</title>
+    <link rel="stylesheet" href="dlac.css">
+</head>
+<body>
+
+<header>
+    <h1>Stanbic Bank Uganda</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="personal-loan.html">Personal Loan Application</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="hero-bank.jpg" alt="Stanbic Bank"
+         style="height:350px;">
+
+    <div class="hero-text">
+        <h2>Apply for Your Loan Online</h2>
+    </div>
+</section>
+
+<main>
+
+    <h2>Our Loan Products</h2>
+
+    <div class="loan-container">
+
+        <div class="loan-card">
+            <h3>Personal Loan</h3>
+            <p>Interest Rate: 18%</p>
+            <a href="personal-loan.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="loan-card">
+            <h3>Business Loan</h3>
+            <p>Interest Rate: 16%</p>
+            <a href="personal-loan.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="loan-card">
+            <h3>Mortgage Loan</h3>
+            <p>Interest Rate: 14%</p>
+            <a href="personal-loan.html" class="btn">Apply Now</a>
+        </div>
+
+    </div>
+
+    <h2>Loan Comparison Table</h2>
+
+    <table>
+        <tr>
+            <th colspan="4">Stanbic Bank Uganda — Loan Products</th>
+        </tr>
+
+        <tr>
+            <th>Feature</th>
+            <th>Personal</th>
+            <th>Business</th>
+            <th>Mortgage</th>
+        </tr>
+
+        <tr>
+            <td>Interest Rate</td>
+            <td>18%</td>
+            <td>16%</td>
+            <td>14%</td>
+        </tr>
+
+        <tr>
+            <td>Max Amount</td>
+            <td>UGX 100 Million</td>
+            <td>UGX 500 Million</td>
+            <td>UGX 1 Billion</td>
+        </tr>
+
+        <tr>
+            <td>Collateral Required</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Stanbic Bank Uganda</p>
+</footer>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Loan Application</title>
+    <link rel="stylesheet" href="dlac.css">
+</head>
+<body>
+
+<header>
+    <h1>Stanbic Bank Uganda</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="personal-loan.html">Personal Loan Application</a>
+    </nav>
+</header>
+
+<main class="form-container">
+
+    <form>
+
+        <fieldset>
+
+            <legend>Personal Loan Application</legend>
+
+            <label for="title">Title</label>
+            <select id="title" required>
+                <option value="">Select Title</option>
+                <option>Mr</option>
+                <option>Mrs</option>
+                <option>Ms</option>
+                <option>Dr</option>
+            </select>
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="district">District</label>
+            <select id="district" required>
+                <option value="">Select District</option>
+                <option>Kampala</option>
+                <option>Wakiso</option>
+                <option>Jinja</option>
+                <option>Mbarara</option>
+                <option>Gulu</option>
+            </select>
+
+            <label for="salary">Monthly Salary</label>
+            <input type="number" id="salary" min="300000">
+
+            <p style="background:#EAF3DE; color:#27500A; padding:8px;">
+                You appear eligible for this loan.
+            </p>
+
+            <label for="amount">Loan Amount Requested</label>
+            <input type="number" id="amount">
+
+            <label for="period">Repayment Period</label>
+            <select id="period">
+                <option value="">Select Period</option>
+                <option>12 Months</option>
+                <option>24 Months</option>
+                <option>36 Months</option>
+            </select>
+
+            <label for="purpose">Loan Purpose</label>
+            <select id="purpose">
+                <option value="">Select Purpose</option>
+                <option>School Fees</option>
+                <option>Medical</option>
+                <option>Home Improvement</option>
+                <option>Other</option>
+            </select>
+
+            <div class="declaration">
+                <input type="checkbox" id="confirm" required>
+                <label for="confirm">
+                    I confirm that the information provided is accurate.
+                </label>
+            </div>
+
+            <button type="submit">Submit Application</button>
+
+        </fieldset>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Stanbic Bank Uganda</p>
+</footer>
+
+</body>
+</html>
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background: #002D62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C9A63A;
+}
+
+/* Hero section */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+.hero-text h2 {
+    font-size: 30px;
+}
+
+/* Main content */
+
+main {
+    padding: 30px;
+}
+
+main h2 {
+    color: #002D62;
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* Loan cards */
+
+.loan-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.loan-card {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-top: 5px solid #C9A63A;
+    border-radius: 8px;
+}
+
+.loan-card h3 {
+    color: #002D62;
+    margin-bottom: 15px;
+}
+
+.loan-card p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #002D62;
+    color: #C9A63A;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #C9A63A;
+    color: #002D62;
+}
+
+/* Comparison table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background: #002D62;
+    color: white;
+}
+
+/* Application form */
+
+.form-container {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+fieldset {
+    background: white;
+    border: 2px solid #002D62;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+legend {
+    color: #002D62;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.declaration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.declaration input {
+    width: auto;
+}
+
+.declaration label {
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #002D62;
+    color: #C9A63A;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #C9A63A;
+    color: #002D62;
+}
+
+/* Footer */
+
+footer {
+    background: #002D62;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design */
+
+@media (max-width: 650px) {
+    .loan-container {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}

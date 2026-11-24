@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stanbic Bank Uganda</title>
+    <link rel="stylesheet" href="dlac.css">
+</head>
+<body>
+
+<header>
+    <h1>Stanbic Bank Uganda</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="personal-loan.html">Personal Loan Application</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="hero-bank.jpg" alt="Stanbic Bank"
+         style="height:350px;">
+
+    <div class="hero-text">
+        <h2>Apply for Your Loan Online</h2>
+    </div>
+</section>
+
+<main>
+
+    <h2>Our Loan Products</h2>
+
+    <div class="loan-container">
+
+        <div class="loan-card">
+            <h3>Personal Loan</h3>
+            <p>Interest Rate: 18%</p>
+            <a href="personal-loan.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="loan-card">
+            <h3>Business Loan</h3>
+            <p>Interest Rate: 16%</p>
+            <a href="personal-loan.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="loan-card">
+            <h3>Mortgage Loan</h3>
+            <p>Interest Rate: 14%</p>
+            <a href="personal-loan.html" class="btn">Apply Now</a>
+        </div>
+
+    </div>
+
+    <h2>Loan Comparison Table</h2>
+
+    <table>
+        <tr>
+            <th colspan="4">Stanbic Bank Uganda — Loan Products</th>
+        </tr>
+
+        <tr>
+            <th>Feature</th>
+            <th>Personal</th>
+            <th>Business</th>
+            <th>Mortgage</th>
+        </tr>
+
+        <tr>
+            <td>Interest Rate</td>
+            <td>18%</td>
+            <td>16%</td>
+            <td>14%</td>
+        </tr>
+
+        <tr>
+            <td>Max Amount</td>
+            <td>UGX 100 Million</td>
+            <td>UGX 500 Million</td>
+            <td>UGX 1 Billion</td>
+        </tr>
+
+        <tr>
+            <td>Collateral Required</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Stanbic Bank Uganda</p>
+</footer>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Loan Application</title>
+    <link rel="stylesheet" href="dlac.css">
+</head>
+<body>
+
+<header>
+    <h1>Stanbic Bank Uganda</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="personal-loan.html">Personal Loan Application</a>
+    </nav>
+</header>
+
+<main class="form-container">
+
+    <form>
+
+        <fieldset>
+
+            <legend>Personal Loan Application</legend>
+
+            <label for="title">Title</label>
+            <select id="title" required>
+                <option value="">Select Title</option>
+                <option>Mr</option>
+                <option>Mrs</option>
+                <option>Ms</option>
+                <option>Dr</option>
+            </select>
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="district">District</label>
+            <select id="district" required>
+                <option value="">Select District</option>
+                <option>Kampala</option>
+                <option>Wakiso</option>
+                <option>Jinja</option>
+                <option>Mbarara</option>
+                <option>Gulu</option>
+            </select>
+
+            <label for="salary">Monthly Salary</label>
+            <input type="number" id="salary" min="300000">
+
+            <p style="background:#EAF3DE; color:#27500A; padding:8px;">
+                You appear eligible for this loan.
+            </p>
+
+            <label for="amount">Loan Amount Requested</label>
+            <input type="number" id="amount">
+
+            <label for="period">Repayment Period</label>
+            <select id="period">
+                <option value="">Select Period</option>
+                <option>12 Months</option>
+                <option>24 Months</option>
+                <option>36 Months</option>
+            </select>
+
+            <label for="purpose">Loan Purpose</label>
+            <select id="purpose">
+                <option value="">Select Purpose</option>
+                <option>School Fees</option>
+                <option>Medical</option>
+                <option>Home Improvement</option>
+                <option>Other</option>
+            </select>
+
+            <div class="declaration">
+                <input type="checkbox" id="confirm" required>
+                <label for="confirm">
+                    I confirm that the information provided is accurate.
+                </label>
+            </div>
+
+            <button type="submit">Submit Application</button>
+
+        </fieldset>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Stanbic Bank Uganda</p>
+</footer>
+
+</body>
+</html>
+
